@@ -13,7 +13,7 @@ export default function Index({ user }) {
           </p>
           <p className="font-normal text-[18px]">ایمیل : {user.email}</p>
           <p className="font-normal text-[18px]">
-            نقش : {user.username === "ADMIN" ? "ادمین" : "کاربر"}
+            نقش : {user.role === "ADMIN" ? "ادمین" : "کاربر"}
           </p>
         </div>
         <div className="w-full mt-4">
