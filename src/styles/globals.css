@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    direction: rtl;
+    font-family: "isans";
+}
+
+@layer components {
+    .img_LOGIN_OR_SINGIN{
+        @apply bg-gradient-to-r from-blue-500 to-indigo-500 rounded-l-md rounded-r-[120px];
+        position: relative;
+        overflow: hidden;
+    }
+}
