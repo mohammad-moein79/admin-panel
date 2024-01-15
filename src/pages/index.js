@@ -4,8 +4,8 @@ import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 function Home() {
-  const [identifire, setIdentifire] = useState("");
-  const [password, setPassword] = useState("");
+  const [identifire, setIdentifire] = useState("admin");
+  const [password, setPassword] = useState("admin123");
   const [error, setError] = useState("");
   const route = useRouter();
   const session = useSession();

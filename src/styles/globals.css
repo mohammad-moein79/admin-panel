@@ -4,6 +4,11 @@
 *{
     direction: rtl;
     font-family: "isans";
+    list-style-type: none;
+}
+
+div, input{
+    transition: all ease 0.2s
 }
 
 @layer components {
@@ -12,4 +17,21 @@
         position: relative;
         overflow: hidden;
     }
+    .mgLink:hover{
+        @apply bg-gradient-to-r from-blue-500  to-indigo-500 text-white
+    }
+
+    input:focus{
+border: 2px solid rgb(100, 100, 255);
+    }
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border-bottom: 2px solid #dddddd;
+  text-align: right;
+  padding: 8px;
+}
 }
